@@ -14,7 +14,7 @@ class Handler implements URLHandler {
                 temp += word + " ";
             
             }
-            return String.format("Words: %d", temp);
+            return String.format("Words: %s", temp);
         } else if (url.getPath().equals("/search")) {
             String[] parameters = url.getQuery().split("=");
 
